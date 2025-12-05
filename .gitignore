@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Bot ma'lumotlari
+data/
+*.db
+*.sqlite3
+
+# Telegram fayllar
+*.session
+*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistem
+.DS_Store
+Thumbs.db

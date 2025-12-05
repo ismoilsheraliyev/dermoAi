@@ -1,0 +1,19 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Python o'rnatish
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Kutubxonalarni o'rnatish
+      run: |
+        pip install -r requirements.txt
+    - name: Syntax tekshirish
+      run: |
+        python -m py_compile b.py
