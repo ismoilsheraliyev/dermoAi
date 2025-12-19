@@ -1,0 +1,16 @@
+name: Run Telegram Bot
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Python Bot
+        run: |
+          pip install python-telegram-bot
+          python bot.py &
+          sleep 295
