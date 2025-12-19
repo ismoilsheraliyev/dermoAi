@@ -12,5 +12,5 @@ jobs:
       - name: Run Python Bot
         run: |
           pip install python-telegram-bot
-          python bot.py &
+          python main.py &
           sleep 295
